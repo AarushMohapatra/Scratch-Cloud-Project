@@ -3,9 +3,9 @@ import pandas as pd
 import csv
 import time
 
-scratchuser = input("Username: ")
-scratchpass = input("Password: ")
-project = input("Project ID: ")
+scratchuser = '' #Your Scratch Username
+scratchpass = '' #Your Scratch Password
+project = '' # Your Project ID
 session = scratch3.login(scratchuser, scratchpass)
 conn = session.connect_cloud(project)
 olddata = ''
